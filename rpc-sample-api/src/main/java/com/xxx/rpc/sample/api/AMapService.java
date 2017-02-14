@@ -10,4 +10,5 @@ import java.net.MalformedURLException;
 public interface AMapService {
 
     public String request(String url) throws IOException;
+
 }

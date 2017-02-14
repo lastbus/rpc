@@ -38,6 +38,9 @@ public class ZooKeeperServiceRegistry implements ServiceRegistry {
             LOGGER.debug("create service node: {}", servicePath);
         }
         // 创建 address 节点（临时）
+
+        //TODO 清除失效的临时节点
+
         String addressPath = servicePath + "/address-";
         String addressNode = zkClient.createEphemeralSequential(addressPath, serviceAddress);
         LOGGER.debug("create address node: {}", addressNode);

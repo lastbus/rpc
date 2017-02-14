@@ -27,4 +27,5 @@ public @interface RpcService {
      * 服务版本号
      */
     String version() default "";
+
 }
